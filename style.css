@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+header img{
+    float: left;
+    max-width: 30px;
+    
+}
+footer{
+    background: linear-gradient(to right top, #0d0553c2, #3201a5bd);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+h1 hr{
+   color: pink;
+   width: 100px;
+}
+
+header{
+    width: 100%;
+    background: linear-gradient(to right top, #fc48d2, #7135fd);
+    color: rgb(245, 239, 239);
+}
+
+.menu li a:hover {
+    background-color: rgba(76, 67, 122, 0.363);
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    
+}
+.sect{
+    width: 1050px;
+    text-align: center;
+}
+#container {
+    background-image: url(fondoHp.jpg);
+    box-shadow: 4px 4px 5px  #fdfdfd;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-menu {
+    display: none;
+}
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+header label:hover{
+    cursor:pointer;
+    background-color: rgba(0,0,0,0,3);
+}
+.menu ul{ 
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li {
+   border-right: 1px solid #fff;
+}
+menu li:hover{
+    background: rgba(0,0,0,0,3);
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#principal{
+    background-image: url(fondo5.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+    background:rgb(162, 1, 255);
+}
+body::-webkit-scrollbar-thumb{
+    border:solid #ffffff;
+    border-radius: 10px;
+}
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.3);
+}
+
+@media (max-width:760px) {
+
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: linear-gradient(to top, #7135fd, #fc48d2);
+        width: 25%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: lpx solid #4c00ff;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    footer{
+        background: linear-gradient(to right top, #0d0553c2, #3201a5bd);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        width: -70%;
+    }
+    .sect{
+     width: auto;
+     width: -70%;
+    }
+}
